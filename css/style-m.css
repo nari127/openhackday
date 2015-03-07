@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*bodyの直接の子要素のh1タグ（ページ最上段にあるh1）設定
+---------------------------------------------------------------------------*/
+body > h1 {
+	display: none;
+}
+
+/*コンテナー（HPを囲むブロック）
+---------------------------------------------------------------------------*/
+#container {
+	width: auto;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+/*ヘッダー（サイト名ロゴが入ったブロック）
+---------------------------------------------------------------------------*/
+/*上部のメインメニュー
+---------------------------------------------------------------------------*/
+nav#mainmenu ul {
+	height: auto;
+	width: auto;
+	position: static;
+	top: auto;
+        left: 0;
+}
+/*各メニューの設定*/
+nav#mainmenu ul li a {
+	float: none;
+}
+nav#mainmenu ul li {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+/*mainコンテンツ
+---------------------------------------------------------------------------*/
+#main {
+	width: auto;
+}
+
+/*トップページのメイン画像
+---------------------------------------------------------------------------*/
+#mainimg {
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin-bottom: 20px;
+	margin-bottom: 30px;
+}
+#slide_image {
+	height: auto;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin-bottom: 20px;
+}
+#slide_image2 {
+	height: auto;
+	width: 100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+/*menu.html内のページ内メニュー
+---------------------------------------------------------------------------*/
+ul.navmenu {
+	font-size: 13px;
+}
+
+/*テーブル１
+---------------------------------------------------------------------------*/
+.ta1 {
+	width: 96%;
+}

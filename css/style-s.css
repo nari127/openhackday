@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/*bodyの直接の子要素のh1タグ（ページ最上段にあるh1）設定
+---------------------------------------------------------------------------*/
+body > h1 {
+	display: none;
+}
+
+/*コンテナー（HPを囲むブロック）
+---------------------------------------------------------------------------*/
+#container {
+	width: auto;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+/*ヘッダー（サイト名ロゴが入ったブロック）
+---------------------------------------------------------------------------*/
+header {
+	height: auto;
+	position: static;
+	text-align: center;
+}
+/*h1ロゴの設定*/
+header h1 {
+	padding-top: 50px;
+	text-align: center;
+	position: static;
+}
+header h1 img {
+	width: 90%;
+	height: auto;
+}
+
+/*上部のメインメニュー
+---------------------------------------------------------------------------*/
+nav#mainmenu ul {
+	height: auto;
+	width: auto;
+	position: static;
+	top: auto;
+	right: auto;
+}
+/*各メニューの設定*/
+nav#mainmenu ul li a {
+	float: none;
+	height: 70px;
+	width: 70px;
+	line-height: 70px;
+	border: 5px solid rgba(255,255,255,0.5);
+	margin-right: 0;
+}
+nav#mainmenu ul li {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+/*マウスオン時の設定*/
+nav#mainmenu ul li a:hover {
+	border: 5px solid #337942;
+}
+
+/*mainコンテンツ
+---------------------------------------------------------------------------*/
+#main {
+	width: auto;
+}
+/*mainコンテンツのh1タグの設定*/
+#main h1 {
+	padding: 2px 5px 2px 10px;
+}
+/*mainコンテンツの段落タグ設定*/
+#main p {
+	padding: 0.5em 5px 1em;
+}
+
+/*トップページのメイン画像
+---------------------------------------------------------------------------*/
+#mainimg {
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin-bottom: 20px;
+}
+#mainimg img {
+	border: 5px solid #FFF;
+}
+#slide_image {
+	height: auto;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#slide_image2 {
+	height: auto;
+	width: 100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/*トップページ内「更新情報・お知らせ」ブロック
+---------------------------------------------------------------------------*/
+section#new h1.open {
+	background: url(../images/btn_minus.png) no-repeat right center, -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e6e6e6));
+	background: url(../images/btn_minus.png) no-repeat right center, -webkit-linear-gradient(#FFF, #e6e6e6);
+	background: url(../images/btn_minus.png) no-repeat right center, linear-gradient(#FFF, #e6e6e6);
+}
+section#new h1.close {
+	background: url(../images/btn_plus.png) no-repeat right center, -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#e6e6e6));
+	background: url(../images/btn_plus.png) no-repeat right center, -webkit-linear-gradient(#FFF, #e6e6e6);
+	background: url(../images/btn_plus.png) no-repeat right center, linear-gradient(#FFF, #e6e6e6);
+}
+/*ブロック全体の設定*/
+#new dl {
+	height: auto;
+	padding-left: 0;
+}
+/*日付設定*/
+#new dt {
+	float: none;
+	width: auto;
+}
+/*記事設定*/
+#new dd {
+	padding-left: 0;
+}
+
+/*menu.html内のページ内メニュー
+---------------------------------------------------------------------------*/
+ul.navmenu {
+	text-align: left;
+	padding: 10px 0px 10px 20px;
+}
+ul.navmenu li {
+	display: block;
+}
+
+/*menu.html内のメニューブロック
+---------------------------------------------------------------------------*/
+/*各ボックスの設定*/
+#main section.list article {
+	float: none;
+	margin: 0px auto 1em;
+}
+
+/*テーブル１
+---------------------------------------------------------------------------*/
+.ta1 {
+	width: 100%;
+}
+/*テーブル内の右側*/
+.ta1 td{
+	width: auto;
+	padding: 2px;
+}
+/*テーブル内の左側の見出し部分*/
+.ta1 th{
+	width: 100px;
+	padding: 2px;
+}
